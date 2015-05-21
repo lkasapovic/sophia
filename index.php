@@ -1,18 +1,14 @@
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>SOPHIA BUSH</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link type="text/css" rel="stylesheet" href="css/bootstrap-theme.css">
-        <link type="text/css" rel="stylesheet" href="css/bootstrap.css"> 
-        <link type="text/css" rel="stylesheet" href="css/custom-style.css">
-    </head>
-    <body>
-        <div class="jumbotron">
-            <h1>SOPHIA BUSH</h1>
-            <h2>Pasadena, California</h2>
-            <p><a id="a" class="btn btn-lg" role="button" href="https://www.google.com/search?q=sophia+bush&oq=sophia+bush&aqs=chrome..69i57j69i61j69i59j69i60j0l2.2186j0j7&sourceid=chrome&es_sm=93&ie=UTF-8">Google page</a></p>
-        </div>
-        <script src="js/bootstrap.min.js"></script>
-    </body>
-</html>
+<?php
+    require_once(__DIR__ . "/controller/login-verify.php");
+    
+    
+    require_once(__DIR__ . "/index.html");
+    
+    if (authenticateUser()) {
+        // want navigation only to appear if user is logged in
+        require_once(__DIR__ . "/view/navigation.php");
+    }
+    require_once(__DIR__ . "/controller/create-db.php");
+    
+    require_once(__DIR__ . "/controller/read-posts.php");
+?>

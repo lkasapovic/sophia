@@ -1,5 +1,5 @@
 h1 {
-    font-style: oblique;
+    font-style: normal;
     color: #000;
     text-align: center;
 }
@@ -14,6 +14,11 @@ html {
     text-align: center;
 }
 
+h4{
+    font-style: normal;
+    color: #000;
+    
+}
 
 body {
     background: linear-gradient(135deg, rgba(85,239,203,1) 0%,rgba(30,87,153,1) 0%,rgba(85,239,203,1) 0%,rgba(91,202,255,1) 100%);

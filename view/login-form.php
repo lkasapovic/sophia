@@ -7,7 +7,7 @@
 <form method="post" action="<?php echo $path .  "controller/login-user.php"?>">
     <div>
         <label for="username">Username: </label>
-        <input type="text" name="username" />
+        <input type="text" name="username"/>
     </div>
     
     <div>

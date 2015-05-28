@@ -16,6 +16,6 @@
     </div>
     
     <div>
-        <button type="submit">Submit</button>
+        <button class="button" ><a href="home.php">Home</a></button>
     </div>
 </form>
